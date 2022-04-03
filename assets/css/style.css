@@ -1,0 +1,20 @@
+body {
+  /*This is a CSS comment*/
+  color: #39a6b2;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  padding: 20px 35px;
+  background-color: #39a6b2;
+}
+header h1 {
+  font-weight: bold;
+  font-size: 36px;
+  color: #fce138;
+  margin: 0;
+}
+
+header a {
+  color: #fce138;
+}
