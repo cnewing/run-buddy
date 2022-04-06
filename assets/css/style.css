@@ -78,6 +78,7 @@ footer a {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  margin-bottom: 15px;
 }
 
 .hero-form {
@@ -105,8 +106,6 @@ footer a {
   padding: 10 px 20px;
   font-size: 16px;
 }
-/*hero style end*/
-
 .form-input {
   border: solid 1px #024e76;
   display: block;
@@ -115,4 +114,24 @@ footer a {
   color: #024e76;
   width: 100%;
   margin-bottom: 15px;
+}
+/*hero style end*/
+
+.intro {
+  text-align: center;
+}
+
+.intro h2 {
+  display: inline-block;
+  font-size: 55px;
+  color: #024e76;
+  margin-bottom: 15px;
+  padding: 0 100px 20px 100px;
+  border-bottom: solid #fce138 3px;
+}
+.intro p {
+  line-height: 1.5;
+  font-size: 20px #39a6b2;
+  width: 80%;
+  margin: 0 auto;
 }
