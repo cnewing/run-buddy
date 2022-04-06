@@ -121,7 +121,7 @@ footer a {
 }
 
 .intro p {
-  line-height: 1.5;
+  line-height: 1.7;
   font-size: 20px #39a6b2;
   width: 80%;
   margin: 0 auto;
@@ -130,6 +130,10 @@ footer a {
 .steps {
   text-align: center;
   background: #fce138;
+}
+
+.steps span {
+  font-size: 38px;
 }
 
 .steps div {
@@ -144,10 +148,6 @@ footer a {
 .steps p {
   color: #39a6b2;
   font-size: 23px;
-}
-
-.steps span {
-  font-size: 38px;
 }
 
 .section-title {
@@ -165,4 +165,29 @@ footer a {
 
 .secondary-border {
   border-color: #39a6b2;
+}
+
+/* trainer sectiom begins */
+
+.trainers {
+  text-align: center;
+}
+
+.trainer {
+  width: 900px;
+  margin: 0 auto 30px auto;
+  background: #024e76;
+  color: #fce138;
+  overflow: auto;
+}
+
+.trainer img {
+  width: 35%;
+  float: left;
+}
+
+.trainer-bio {
+  width: 65%;
+  padding: 35px;
+  float: left;
 }
