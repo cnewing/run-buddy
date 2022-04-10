@@ -8,6 +8,7 @@
     <title>Run Buddy</title>
   </head>
   <body>
+    <!-- navigation -->
     <header>
       <h1>
         <a href="/">RUN BUDDY</a>
@@ -36,12 +37,14 @@
     <section class="hero">
       <div class="hero-form">
         <h3>Get Started Today</h3>
-        <p>Fill out this form and on of our trainers will schedule a consult</p>
-        <form action="">
+        <p>
+          Fill out this form and one of our trainers will schedule a consult
+        </p>
+        <form>
           <label for="name">Enter full name:</label>
           <input
             type="text"
-            placeholder="Your name"
+            placeholder="Your Name"
             name="name"
             id="name"
             class="form-input"
@@ -64,18 +67,17 @@
             class="form-input"
           />
           <p>
-            Have you worked with a trainer before?
+            Have you worked out with a trainer before?
             <input type="radio" name="trainer-confirm" id="trainer-yes" />
             <label for="trainer-yes">Yes</label>
             <input type="radio" name="trainer-confirm" id="trainer-no" />
             <label for="trainer-no">No</label>
           </p>
           <p>
-            Are you at least 18 years old or older?
+            <label for="checkbox">
+              I acknowledge that I am at least 18 years of age.
+            </label>
             <input type="checkbox" name="age-confim" id="age-yes" />
-            <label for="age-yes">Yes</label>
-            <input type="checkbox" name="age-confim" id="age-ne" />
-            <label for="age-no">No</label>
           </p>
 
           <button type="submit" id="heroFormButton">Get running!</button>
@@ -91,17 +93,14 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
         malesuada justo ac magna blandit suscipit. Mauris finibus erat at lorem
         imperdiet, in volutpat nibh tempor. Praesent sed ex pharetra,
-        pellentesque urna et, volutpat dolor. Phasellus a sem vitae ante
-        volutpat finibus. Curabitur lacinia leo ipsum, quis porta dui sagittis
-        sed. Aenean lacinia tortor eu placerat maximus. Nullam accumsan augue
-        non eleifend pretium. Proin eu erat et lorem venenatis dictum non et
-        ante. Pellentesque vel tortor bibendum, mollis orci ut, interdum mi.
-        Nullam sapien ligula, tempor eget neque eget, elementum dignissim.
+        pellentesque urna et, volutpat dolor. Phasellus a sem vitae ante.
       </p>
     </section>
+
     <!--"what you do " section-->
     <section id="what-you-do" class="steps">
       <h2 class="section-title secondary-border">What You Do</h2>
+
       <div>
         <!--Insert image below-->
         <img src="./assets/images/01-04-svgs/step-1.svg" alt="" />
@@ -136,59 +135,58 @@
 
     <!--meet the trainers section-->
     <section id="your-trainers" class="trainers">
-      <h2 class="section-title primary-border">Meet Your Trainers</h2>
+      <h2 class="section-title primary-border">Meet The Trainers</h2>
+      <article class="trainer">
+        <img
+          src="./assets/images/trainer-1.jpg"
+          alt="Arron Stephens in his workout clothes, ready to pump iron"
+        />
+        <div class="trainer-bio text-left">
+          <h3>Arron Stephens</h3>
+          <h4>Speed / Strength</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt
+            delectus quae doloremque tenetur error, porro qui quasi dignissimos
+            voluptate iure, nostrum nesciunt accusantium sequi quisquam illum.
+          </p>
+        </div>
+      </article>
+
+      <!-- trainer #2-->
+      <article class="trainer">
+        <div class="trainer-bio text-right">
+          <h3>Joanna Gill</h3>
+          <h4>Endurance</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quia
+            neque quis minima laudantium molestiae architecto a, cupiditate
+            officiis maxime ullam rem aliquam possimus similique! Omnis, nisi.
+          </p>
+        </div>
+        <img
+          src="./assets/images/trainer-2.jpg"
+          alt="Joanna Gill cooling off after a workout"
+        />
+      </article>
+
+      <!-- trainer #3 -->
+      <article class="trainer">
+        <img
+          src="./assets/images/trainer-3.jpg"
+          alt="Harry Smith wearing a headband and lifting comically small pink weights"
+        />
+        <div class="trainer-bio text-left">
+          <h3>Harry "The Headband" Smith</h3>
+          <h4>Strength</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            totam fugiat delectus corrupti sed eum animi atque, dolor corporis.
+            Culpa, blanditiis maxime. Impedit sapiente quisquam ex
+            exercitationem veritatis ipsam quae.
+          </p>
+        </div>
+      </article>
     </section>
-
-    <article class="trainer">
-      <img
-        src="./assets/images/trainer-1.jpg"
-        alt="Arron Stephens in his workout clothes, ready to pump iron"
-      />
-      <div class="trainer-bio" text-left>
-        <h3>Arron Stephens</h3>
-        <h4>Speed / Strength</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt
-          delectus quae doloremque tenetur error, porro qui quasi dignissimos
-          voluptate iure, nostrum nesciunt accusantium sequi quisquam illum
-          dolorem rerum distinctio aut.
-        </p>
-      </div>
-    </article>
-
-    <article class="trainer">
-      <div class="trainer-bio text-right">
-        <h3>Joanna Gill</h3>
-        <h4>Endurance</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quia neque
-          quis minima laudantium molestiae architecto a, cupiditate officiis
-          maxime ullam rem aliquam possimus similique! Omnis, nisi.
-        </p>
-      </div>
-      <img
-        src="./assets/images/trainer-2.jpg"
-        alt="Joanna Gill cooling off after a workout"
-      />
-    </article>
-
-    <article class="trainer">
-      <img
-        src="./assets/images/trainer-3.jpg"
-        alt="Harry Smith wearing a headband and lifting comically small pink weights"
-      />
-      <div class="trainer-bio text-left">
-        <h3>Harry "The Headband" Simth</h3>
-        <h4>Strength</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-          totam fugiat delectus corrupti sed eum animi atque, dolor corporis.
-          Culpa, blanditiis maxime. Impedit sapiente quisquam ex exercitationem
-          veritatis ipsam quae.
-        </p>
-      </div>
-    </article>
-
     <!--end of meet the trainers section-->
 
     <!--"reach out" section-->
@@ -197,48 +195,40 @@
       <div class="contact-info">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2940.1475208161273!2d-83.24843918462128!3d42.53092093228689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824c78b9d03ea0b%3A0x789a9aca5fe82f85!2s18850%20W%2014%20Mile%20Rd%2C%20Beverly%20Hills%2C%20MI%2048025!5e0!3m2!1sen!2sus!4v1649282306926!5m2!1sen!2sus"
-          width="400"
-          height="400"
           style="border: 0"
           allowfullscreen=""
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
         >
         </iframe>
+        <div>
+          <h3>Run Buddy</h3>
+          <p>
+            Any questions or concerns before signing up?
+            <br />
+            Let us know and we'll be happy to talk to you!
+          </p>
+          <address>
+            55 Main Street
+            <br />Some Town, CA
+            <br />
+            12345
+            <br />
+            P: 555.RUN.BUDZ (555.786.2839)
+            <br />
+            E: <a href="mailto: info@runbuddy.io">info@runbuddy.io</a>
+          </address>
+        </div>
       </div>
     </section>
-    <div class="contact contact-info">
-      <h3>Run Buddy</h3>
 
-      <p>
-        Any questions or concerns before signing up?
-
+    <!--footer-->
+    <footer>
+      <h2>❤️ Made with love by Run Buddy</h2>
+      <div>
+        <a href="#">Read Our Privacy Policy</a>
         <br />
-
-        Let us know and we'll be happy to talk to you!
-      </p>
-
-      <address>
-        55 Main Street
-        <br />
-        Some Town, CA
-        <br />
-        12345
-        <br />
-        P: 555.RUN.BUDZ (555.786.2839)
-        <br />
-        E: <a href="mailto: info@runbuddy.io">info@runbuddy.io</a>
-      </address>
-    </div>
+        &copy; 2019 Run Buddy, Inc.
+      </div>
+    </footer>
   </body>
-
-  <!--footer-->
-  <footer>
-    <h2>❤️ Made With Love by Run Buddy</h2>
-    <div>
-      <a href="#">Read Our Privacy Policy</a>
-      <br />
-      &copy; 2019 Run Buddy, Inc.
-    </div>
-  </footer>
 </html>
